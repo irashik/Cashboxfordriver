@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/frg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sum_trip"
+                android:id="@+id/input_summ"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:digits="0123456789."
+                android:inputType="numberDecimal">
+            </EditText>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payment"
+                    android:id="@+id/payment"
+                    android:layout_below="@+id/input_summ"/>
+
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/selected"
+                    android:text="@string/cash"
+                    />
+
+            </LinearLayout>
+
+
+
+            <com.linfaxin.multirowsradiogroup.MultiRowsRadioGroup
+                 android:id="@+id/radio_group"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                     <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_weight="2">
+
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_first"
+                                            android:checked="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/cash"/>
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_second"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/ticket"/>
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_third"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/noticket"/>
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_four"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/by_card"/>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_weight="2"
+                                        >
+
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_six"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/by_yandexnoncash"/>
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_five"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/by_yandexcash"/>
+
+
+                                        <RadioButton
+                                            android:id="@+id/radio_button_seven"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/by_yandexbonus"
+                                            />
+
+                                    </LinearLayout>
+
+</LinearLayout>
+
+            </com.linfaxin.multirowsradiogroup.MultiRowsRadioGroup>
+
+            <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/btn.save"
+                   android:id="@+id/save_btn"/>
+
+            </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

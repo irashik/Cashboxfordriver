@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fr_inputinfo_main"
+    >
+
+    <TextView
+        android:id="@+id/input_info"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_input_save"
+        android:text="@string/btn.save"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_info_txt_timestart"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/input_timestart"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/input_info_btn_timestart"
+                android:onClick="Click_timestart"
+                android:textSize="@dimen/litletext"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:id="@+id/timestart"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_info_txt_timeend"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/input_timeend"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/input_info_btn_timeend"
+                android:onClick="Click_timeend"
+                android:textSize="@dimen/litletext"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:id="@+id/timeend"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_call"
+        style="@style/MyStileForInputInfoTextView"
+        />
+
+    <EditText
+        android:id="@+id/input_numbercall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_info_edt_call"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:textSize="12sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_name"
+        style="@style/MyStileForInputInfoTextView"
+        />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:hint="@string/input_info_edt_name"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_mileage1"
+        style="@style/MyStileForInputInfoTextView"
+        />
+
+    <EditText
+        android:id="@+id/input_mileage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:hint="@string/input_info_edt_mileage1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_mileage2"
+        style="@style/MyStileForInputInfoTextView"
+        />
+
+    <EditText
+        android:id="@+id/input_mileage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:maxLines="1"
+        android:hint="@string/input_info_edt_mileage2"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_petrol"
+        style="@style/MyStileForInputInfoTextView"
+        />
+
+    <EditText
+        android:id="@+id/input_filloil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="@string/input_info_edt_petrol"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_petrol_exp"
+        style="@style/MyStileForInputInfoTextView"/>
+
+    <EditText
+        android:id="@+id/input_filloil_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="@string/input_info_edt_petrol_exp"
+       />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_expense"
+        style="@style/MyStileForInputInfoTextView"/>
+
+    <EditText
+        android:id="@+id/input_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:digits="0123456789."
+        android:hint="@string/input_info_edt_expense"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/input_info_edt_comment"
+        style="@style/MyStileForInputInfoTextView"/>
+
+    <EditText
+        android:id="@+id/input_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:hint="@string/input_info_edt_comment"
+        />
+
+
+
+</LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_appName"
+            android:text="@string/app_name"
+            android:textSize="@dimen/largetext"
+            android:layout_gravity="center"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_author"
+            android:id="@+id/about_author"
+            android:textSize="@dimen/litletext"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_email"
+            android:id="@+id/about_email_author"
+            android:autoLink="email"
+            android:textSize="@dimen/litletext"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_version"
+            android:textSize="@dimen/litletext"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:textSize="@dimen/litletext"
+            android:layout_gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_license"
+                android:text="@string/about_license"
+                android:layout_marginRight="3dp"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:textSize="@dimen/litletext"
+                android:layout_gravity="center"
+                />
+
+
+
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logotype_gpl_v3"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+   </LinearLayout>
+
+    <!--
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+
+     >
+
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_gravity="center"
+           >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/about_send_text"
+        android:id="@+id/about_send"
+        android:textSize="@dimen/litletext"
+        />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:id="@+id/sendreport"
+           android:textSize="10sp"
+           android:layout_gravity="bottom"
+           android:text="@string/send_report"
+
+           />
+       </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edit_sendreport"
+        />
+
+
+
+
+   </LinearLayout> -->
+
+
+</LinearLayout>

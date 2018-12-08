@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <TableLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        >
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:id="@+id/report_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_text"
+                android:textSize="@dimen/largetext"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+
+        <TableRow
+
+            android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:id="@+id/report_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_call"/>
+
+            <TextView
+                android:id="@+id/rs_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen"
+
+            >
+
+            <TextView
+                android:id="@+id/report_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_fio"/>
+
+            <TextView
+                android:id="@+id/rs_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_data1"/>
+
+            <TextView
+                android:id="@+id/rs_data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_data2"/>
+
+            <TextView
+                android:id="@+id/rs_data2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/report_proceeds"/>
+
+            <TextView
+                android:id="@+id/rs_proceeds_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:id="@+id/report_proceeds_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_cash"/>
+
+            <TextView
+                android:id="@+id/rs_proceeds_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_noncash" />
+
+            <TextView
+                android:id="@+id/rs_proceeds_noncash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_ticket" />
+
+            <TextView
+                android:id="@+id/rs_proceeds_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                />
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_nonticket"/>
+
+            <TextView
+                android:id="@+id/rs_proceeds_noticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_yandexcash"/>
+
+            <TextView
+                android:id="@+id/rs_proceeds_yandexcash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_yandexnoncahs"/>
+
+            <TextView
+                android:id="@+id/rs_proceeds_yandexnoncash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_yandexbonus"/>
+            <TextView
+                android:id="@+id/rs_proceeds_yandexbonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_mileage1"/>
+            <TextView
+                android:id="@+id/rs_mileage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_mileage2"/>
+            <TextView
+                android:id="@+id/rs_mileage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_mileage"/>
+            <TextView
+                android:id="@+id/rs_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_filloil"/>
+            <TextView
+                android:id="@+id/rs_petroil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_filloil2"/>
+            <TextView
+                android:id="@+id/rs_petroil_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_filloil3"/>
+            <TextView
+                android:id="@+id/rs_petroil_uexpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_filloil4"/>
+            <TextView
+                android:id="@+id/rs_petroil_kmexpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_expense"/>
+            <TextView
+                android:id="@+id/rs_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_comment"/>
+        </TableRow>
+
+
+        <TableRow android:padding="@dimen/tabledimen">
+            <TextView
+                android:id="@+id/rs_comments"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="@string/empty"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+    </TableLayout>
+</ScrollView>
