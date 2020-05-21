@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
+//import com.crashlytics.android.Crashlytics;
+//import io.fabric.sdk.android.Fabric;
 
 import irashindmitrii.cashboxfordriver.database.SqliteDatabasePayment;
 import irashindmitrii.cashboxfordriver.database.SqliteDatabaseWorkday;
@@ -80,7 +80,7 @@ public class Fragment_report extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(getActivity(), new Crashlytics());
+       // Fabric.with(getActivity(), new Crashlytics());
 
         if (getArguments() != null) {
             openreport = getArguments().getBoolean("openreport");

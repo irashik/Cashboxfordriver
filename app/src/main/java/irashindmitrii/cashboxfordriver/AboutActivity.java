@@ -26,7 +26,7 @@ public class AboutActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
-        Fabric.with(this, new Crashlytics());
+        //Fabric.with(this, new Crashlytics());
         textVersion = (TextView) findViewById(R.id.about_version);
 
         // нужна обертка для метода getPackageInfo

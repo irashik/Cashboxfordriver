@@ -82,7 +82,7 @@ public class Fragment_input_info extends Fragment implements View.OnClickListene
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(getActivity(), new Crashlytics());
+        //Fabric.with(getActivity(), new Crashlytics());
 
         // проверка передачи аргументов редактирования
         if (getArguments() != null) {

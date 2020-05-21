@@ -21,8 +21,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
+//todo полностью удали из программы данный интерфейс.
+//import com.crashlytics.android.Crashlytics;
+//import io.fabric.sdk.android.Fabric;
 
 import static irashindmitrii.cashboxfordriver.Fragment_input_info.sOPENGANG;
 
@@ -40,7 +41,8 @@ public class MainActivity extends AppCompatActivity implements Fragment_input_in
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
+        //Fabric.with(this, new Crashlytics());
+
         setContentView(R.layout.activity_main);
         myDialogFragment = new MyDialogFragment();
 

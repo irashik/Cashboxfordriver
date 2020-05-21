@@ -65,7 +65,7 @@ public class Fragment_main extends Fragment implements OnClickListener,
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(getActivity(), new Crashlytics());
+        //Fabric.with(getActivity(), new Crashlytics());
 
         if (getArguments() != null) {
             redaction = getArguments().getBoolean("redaction");

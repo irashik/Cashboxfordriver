@@ -14,7 +14,7 @@ import android.content.CursorLoader;
 import android.content.Loader;
 
 import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
+//import io.fabric.sdk.android.Fabric;
 
 import irashindmitrii.cashboxfordriver.adapter.PaymentsAdapter;
 import irashindmitrii.cashboxfordriver.database.SqliteDatabasePayment;
@@ -43,7 +43,7 @@ public class Fragment_payment extends Fragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(getActivity(), new Crashlytics());
+        //Fabric.with(getActivity(), new Crashlytics());
     }
 
     @Override

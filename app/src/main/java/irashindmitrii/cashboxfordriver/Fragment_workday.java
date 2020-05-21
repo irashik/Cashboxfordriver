@@ -13,8 +13,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
+//import com.crashlytics.android.Crashlytics;
+//import io.fabric.sdk.android.Fabric;
 
 import irashindmitrii.cashboxfordriver.adapter.WorkdayAdapter;
 import irashindmitrii.cashboxfordriver.database.SqliteDatabaseWorkday;
@@ -45,7 +45,7 @@ public class Fragment_workday extends Fragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(getActivity(), new Crashlytics());
+     //   Fabric.with(getActivity(), new Crashlytics());
     }
 
     @Override
